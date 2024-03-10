@@ -1,6 +1,6 @@
 <template>
   <div >
-    <el-button>Default</el-button>
+    <router-view/>
   </div>
 </template>
 
