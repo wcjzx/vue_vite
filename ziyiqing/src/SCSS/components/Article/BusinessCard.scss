@@ -1,0 +1,43 @@
+
+.businessCard {
+  width: 200px;
+  height: 200px;
+  background: #1234;
+  border-radius: 10px;
+  .top {
+    display: flex;
+    // border-bottom: 2px solid #020c1d
+    // justify-content: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 10px 10px 0 40px;
+      float: left;
+    }
+    // }
+    .name {
+    }
+  }
+  .middle {
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid #020c1d;
+    height: 30px;
+    h5 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 30px;
+      // border-top: 2px solid #020c1d
+    }
+  }
+  div {
+    ul {
+      li {
+        margin-bottom:5px ;
+      }
+    }
+  }
+}
