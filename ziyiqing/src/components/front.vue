@@ -5,8 +5,10 @@
             <hander/>
         </el-header>
         <el-container>
-          <el-aside width="200px">Aside</el-aside>
-          <el-main>Main</el-main>
+          <el-aside width="200px"></el-aside>
+          <el-main>
+            <left/>
+          </el-main>
         </el-container>
       </el-container>
       <el-button>moren</el-button>
@@ -17,8 +19,10 @@
 <script setup lang="js">
 import {ref} from "vue"
 import hander from "@/components/front/hander.vue"
+import left from "@/components/front/left.vue"
 components:{
-    hander
+    hander,
+    left
 }
 const a = ref(0)
 </script>
