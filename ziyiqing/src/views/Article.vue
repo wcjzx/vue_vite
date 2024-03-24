@@ -1,33 +1,62 @@
 <template>
-<div class="article">
-    <navigationBar/>
-    <div class="context">
-        <businessCard/>
-        <div class="right">文章</div>
+  <div class="article">
+    <navigationBar />
+    <div class="article-content">
+      <div class="article-left">
+        <businessCard />
+        <!-- 分类组件 -->
+        <categoryList />
+      </div>
+      <div class="article-right">
+        <!-- 通知组件 -->
+        <noticeList/>
+        <!-- 文章列表组件 -->
+        <!-- <articleList/> -->
+      </div>
     </div>
-
-    
-</div>
+  </div>
 </template>
 
  <script setup lang="js">
 import {computed} from 'vue';
 import navigationBar from "@/components/Homepage/NavigationBar.vue";
 import businessCard from "@/components/Article/BusinessCard.vue";
+import categoryList from "@/components/Article/CategoryList.vue";
+// import articleList from "@/components/Article/ArticleList.vue";
+import noticeList from "@/components/Article/NoticeList.vue";
 
 components: {
     navigationBar,
-    businessCard
-
+    businessCard,
+    categoryList,
+    // articleList,
+    noticeList
 }
  </script>
 <style scoped lang="scss">
 .article {
-    .context {
-        .left {
-        }
-        .right {
-        }
+  .article-content {
+    padding: 0 5%;
+    display: flex;
+    .article-left {
+      width: 20%;
+      .businessCard {
+        margin-top: 20px;
+        
+      }
+      .categoryList{
+        margin-top: 20px;
+      } 
+      
     }
+    .article-right{
+        width: 75%;
+        height: 780px;
+        background: #FAE8E0;
+        margin-left: 5%;
+        border-radius: 10%;
+        margin-top:20px
+    }
+  }
 }
 </style>

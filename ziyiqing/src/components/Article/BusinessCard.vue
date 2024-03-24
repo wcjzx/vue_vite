@@ -1,23 +1,26 @@
 <template>
   <div class="businessCard">
+    <!-- 顶部区 -->
     <div class="top">
       <div class="img">
         <img src="@/assets/images/15912486859130400.jpg" alt="" />
       </div>
       <div class="name">
-        <h4>「子驿卿」</h4>
+        <h3>「子驿卿」</h3>
       </div>
     </div>
     <div class="middle">
-      <h5>"热爱文字"</h5>
+      <!-- 标签栏 -->
+      <div>
+        <div>项目</div>
+        <div>项目</div>
+        <div>项目</div>
+      </div>
     </div>
+    <!-- 个人主页 -->
     <div>
-      <ul>
-        <li>123</li>
-        <li>123</li>
-        <li>123</li>
-        <li>123</li>
-      </ul>
+      <el-button class="elbutton">个人首页</el-button>
+
     </div>
   </div>
 </template>
