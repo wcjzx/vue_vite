@@ -15,4 +15,6 @@ export function getArticleCategoryInfo(){
 export function getArticleNotice(){
     return Article.get('/notice')
 }
-
+export function getCategoryArticle(){
+    return Article.get('/categoryArticle')
+}

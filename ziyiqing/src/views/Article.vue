@@ -11,7 +11,7 @@
         <!-- 通知组件 -->
         <noticeList/>
         <!-- 文章列表组件 -->
-        <!-- <articleList/> -->
+        <articleList/>
       </div>
     </div>
   </div>
@@ -22,14 +22,14 @@ import {computed} from 'vue';
 import navigationBar from "@/components/Homepage/NavigationBar.vue";
 import businessCard from "@/components/Article/BusinessCard.vue";
 import categoryList from "@/components/Article/CategoryList.vue";
-// import articleList from "@/components/Article/ArticleList.vue";
+import articleList from "@/components/Article/ArticleList.vue";
 import noticeList from "@/components/Article/NoticeList.vue";
 
 components: {
     navigationBar,
     businessCard,
     categoryList,
-    // articleList,
+    articleList,
     noticeList
 }
  </script>

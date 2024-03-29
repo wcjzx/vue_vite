@@ -1,7 +1,8 @@
 <template>
   <div class="Homepage">
     <navigationBar :User="User"></navigationBar>
-    <div class="middleLevel">
+    <div class="navigationBar">
+      <div class="middleLevel">
       <personalResumeCard :User="User"></personalResumeCard>
       <div class="project">
         <famousQuoteCard />
@@ -9,6 +10,8 @@
       </div>
 
     </div>
+    </div>
+    
   </div>
 </template>
 <script setup lang="js">
