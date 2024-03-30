@@ -1,9 +1,11 @@
 <template>
-  <div class="header">
-    <div class="box">
+<div class="navigationBar">
+  <div class="navigation">
+     <!-- 导航区 -->
+     <div class="box">
       <span class="name">{{ store.userInfo.name }}</span>
       <nav class="nav">
-        <router-link class="link" active-class="active" to="/front"
+        <router-link class="link" active-class="active" to="/Homepage"
           >首页</router-link
         >
         <router-link class="link" active-class="active" to="/resume"
@@ -22,18 +24,34 @@
           >摄影</router-link
         >
       </nav>
-    </div>
   </div>
+  </div>
+    <!-- 展示区 -->
+    <div class="main-content">
+      <RouterView></RouterView>
+    </div>
+    
+</div>
 </template>
 
-<script setup lang="js">
-import { reactive, ref,onMounted,onBeforeMount } from 'vue';
+ <script setup lang="js">
+import { ref,reactive, onMounted, computed, defineEmits, defineComponent } from "vue";
+import {RouterView,RouterLink,useRouter} from 'vue-router'
+// 从store获取后端的个人信息数据
 import { useStore } from '@/pinia/index.js'
-
 const store = useStore();
-
-</script>
-
+store.getUserInfo();
+console.log(store.userInfo)
+// 首次即加载主页信息
+const router = useRouter()
+function showNewsDetail(){
+  router.replace({
+    name:'Homepage',
+  })
+} 
+showNewsDetail()
+ </script>
 <style scoped lang="scss">
 @import '@/SCSS/components/Homepage/NavigationBar.scss'
 </style>
+vue

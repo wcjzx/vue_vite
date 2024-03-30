@@ -16,7 +16,6 @@ export const useStore = defineStore('main', {
         // 异步 action，一般用来处理异步逻
         async getUserInfo() {
             const result = await getUserInfo()
-            console.log(result)
             const data = result.data
             this.userInfo.name = data.username
             this.userInfo.School = data.school

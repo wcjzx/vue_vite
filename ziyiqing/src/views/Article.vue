@@ -1,6 +1,5 @@
 <template>
   <div class="article">
-    <navigationBar />
     <div class="article-content">
       <div class="article-left">
         <businessCard />
@@ -19,19 +18,11 @@
 
  <script setup lang="js">
 import {computed} from 'vue';
-import navigationBar from "@/components/Homepage/NavigationBar.vue";
 import businessCard from "@/components/Article/BusinessCard.vue";
 import categoryList from "@/components/Article/CategoryList.vue";
 import articleList from "@/components/Article/ArticleList.vue";
 import noticeList from "@/components/Article/NoticeList.vue";
 
-components: {
-    navigationBar,
-    businessCard,
-    categoryList,
-    articleList,
-    noticeList
-}
  </script>
 <style scoped lang="scss">
 .article {
