@@ -29,7 +29,6 @@
             <i class="icon iconfont icon-gonggao"></i>
             <i class="icon iconfont icon-gonggao"></i>
             </div>
-           
           </div>
         </div>
       </div>

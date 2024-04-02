@@ -6,14 +6,13 @@ $c3:#B6E2D3;
 $c4:#D8A7B1;
 $c5:#67595E;
 
-// 侧边距
-$sideMargin:60px;
-// 顶边距
-$cardHeight:50px;
-//卡片风格
 @mixin cardStyle{ 
     border-radius:20px ;
-    background: rgba(51, 68, 85, 0.242);
+    // background: rgba(51, 68, 85, 0.242);
+    &:hover{
+        box-shadow: rgb(185, 183, 183) 0px 0px 15px 3px;
+    }
+     box-shadow: rgb(185, 183, 183) 0px 0px 10px 1px;//边框内阴影
     
 }
 

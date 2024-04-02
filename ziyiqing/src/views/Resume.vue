@@ -22,5 +22,16 @@ import universityExperience from "@/components/Resume/UniversityExperience.vue"
  </script>
 
 <style scoped lang="scss">
-@import '@/SCSS/views/Resume.scss'
+// @import '@/SCSS/views/Resume.scss'
+
+@import '@/common/common';
+.resume{
+    .bottom{
+        // background:$c1;
+        height: 1950px;
+        margin: 0 150px;
+    }
+}
+
+
 </style>

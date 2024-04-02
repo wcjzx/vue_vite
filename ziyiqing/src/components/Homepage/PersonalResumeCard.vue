@@ -40,5 +40,67 @@ import { useStore } from '@/pinia/index.js'
 const store = useStore();
 </script>
 <style scoped lang="scss">
-@import '@/SCSS/components/Homepage/PersonalResumeCard.scss'
+// @import '@/SCSS/components/Homepage/PersonalResumeCard.scss'
+
+@import '@/common/common';
+
+.personalResumeCard {
+
+    @include cardStyle;
+    height: 400px;
+    width: 300px;
+
+    .photo {
+        text-align: center;
+        margin-top: 30px;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+    }
+
+    .name {
+        text-align: center;
+    }
+
+    .dividingLine {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .from {
+        height: 70px;
+
+        .key {
+            float: left;
+            margin-left: 15px;
+            div{
+                margin-bottom:5px ;
+            }
+        }
+
+        .value {
+            float: right;
+            margin-right: 15px;
+            }
+            div{
+                margin-bottom:5px ;
+            }
+        }
+    }
+    .icons{
+        text-align: center;
+        i{
+            margin: 20px;
+            font-size: 25px;
+        }
+    }
+
+
+
+
+
+
 </style>

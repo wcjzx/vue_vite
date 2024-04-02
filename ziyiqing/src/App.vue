@@ -13,7 +13,6 @@
 body{
     font-size: 16px;
     font-family: YeZiGongChangYanShanTingXingKai;
-    /* background-image: url('image/home.jpg'); */
     margin: 0px;
     padding: 0px;
 }
