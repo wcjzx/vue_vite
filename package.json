@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "element-plus": "^2.6.1"
+    "element-plus": "^2.6.1",
+    "md-editor-v3": "^4.13.0"
   }
 }

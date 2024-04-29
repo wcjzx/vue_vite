@@ -12,7 +12,9 @@
 @import '@/assets/font.css';
 body{
     font-size: 16px;
-    font-family: YeZiGongChangYanShanTingXingKai;
+    // font-family: YeZiGongChangYanShanTingXingKai;
+    font-family: HYZhengYuan-65S;
+    // font-family: 大宝桃桃体;
     margin: 0px;
     padding: 0px;
 }

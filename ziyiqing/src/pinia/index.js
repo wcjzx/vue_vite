@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { getUserInfo } from '../utils/request'
+import { getArticleCategoryInfo,getNewArticle } from '../utils/request'
 
 export const useStore = defineStore('main', {
     state: () => {
@@ -10,6 +11,8 @@ export const useStore = defineStore('main', {
                 Professions:'',
                 GraduateCity:''
             },
+            Category: [],
+            ArticleCategory: []
         }
     },
     actions: {
@@ -21,6 +24,18 @@ export const useStore = defineStore('main', {
             this.userInfo.School = data.school
             this.userInfo.Professions= data.professions
             this.userInfo.GraduateCity = data.graduatecity
+        },
+        async getArticleCategoryInfo(){
+            const result = await getArticleCategoryInfo()
+            const data = result.data
+            this.Category = data
+        },
+        // 动态文章
+        async getNewArticle(){
+            const result = await getNewArticle()
+            const data = result.data
+            this.ArticleCategory = data
+            console.log(this.ArticleCategory)
         }
     }
 })
